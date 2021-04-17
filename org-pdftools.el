@@ -211,7 +211,7 @@ Can be one of highlight/underline/strikeout/squiggly."
                         (isearch-yank-string search-string))
                         ))
                  (isearch-mode t)
-                 (let (pdf-isearch-narrow-to-page t)
+                 (let ((pdf-isearch-narrow-to-page t))
                    (isearch-yank-string search-string))))))
           ((string-match
             "\\(.*\\)@@\\(.*\\)"
